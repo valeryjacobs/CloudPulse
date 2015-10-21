@@ -1,0 +1,14 @@
+C:\Code\CloudPulse\SerialRX\SerialRX\bin\Debug\SerialRX.exe.config
+C:\Code\CloudPulse\SerialRX\SerialRX\bin\Debug\SerialRX.exe
+C:\Code\CloudPulse\SerialRX\SerialRX\bin\Debug\SerialRX.pdb
+C:\Code\CloudPulse\SerialRX\SerialRX\bin\Debug\System.Reactive.Core.dll
+C:\Code\CloudPulse\SerialRX\SerialRX\bin\Debug\System.Reactive.Interfaces.dll
+C:\Code\CloudPulse\SerialRX\SerialRX\bin\Debug\System.Reactive.Linq.dll
+C:\Code\CloudPulse\SerialRX\SerialRX\bin\Debug\System.Reactive.PlatformServices.dll
+C:\Code\CloudPulse\SerialRX\SerialRX\bin\Debug\System.Reactive.Core.xml
+C:\Code\CloudPulse\SerialRX\SerialRX\bin\Debug\System.Reactive.Interfaces.xml
+C:\Code\CloudPulse\SerialRX\SerialRX\bin\Debug\System.Reactive.Linq.xml
+C:\Code\CloudPulse\SerialRX\SerialRX\bin\Debug\System.Reactive.PlatformServices.xml
+C:\Code\CloudPulse\SerialRX\SerialRX\obj\Debug\SerialRX.csprojResolveAssemblyReference.cache
+C:\Code\CloudPulse\SerialRX\SerialRX\obj\Debug\SerialRX.exe
+C:\Code\CloudPulse\SerialRX\SerialRX\obj\Debug\SerialRX.pdb

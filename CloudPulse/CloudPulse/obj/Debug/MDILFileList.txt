@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Files>
+  <file>\CloudPulse.exe</file>
+  <file>\Microsoft.Band.dll</file>
+  <file>\Microsoft.Band.Phone.dll</file>
+  <file>\Microsoft.Band.Store.dll</file>
+  <file>\Syncfusion.Data.Universal.dll</file>
+  <file>\Syncfusion.DocIO.Universal.dll</file>
+  <file>\Syncfusion.Pdf.Universal.dll</file>
+  <file>\Syncfusion.SfAccordion.Universal.dll</file>
+  <file>\Syncfusion.SfBarcode.Universal.dll</file>
+  <file>\Syncfusion.SfBulletGraph.Universal.dll</file>
+  <file>\Syncfusion.SfBusyIndicator.Universal.dll</file>
+  <file>\Syncfusion.SfCarousel.Universal.dll</file>
+  <file>\Syncfusion.SfChart.Universal.dll</file>
+  <file>\Syncfusion.SfColorPickers.Universal.dll</file>
+  <file>\Syncfusion.SfDiagram.Universal.dll</file>
+  <file>\Syncfusion.SfGauge.Universal.dll</file>
+  <file>\Syncfusion.SfGrid.Universal.dll</file>
+  <file>\Syncfusion.SfGridConverter.Universal.dll</file>
+  <file>\Syncfusion.SfHubTile.Universal.dll</file>
+  <file>\Syncfusion.SfInput.Universal.dll</file>
+  <file>\Syncfusion.SfMaps.Universal.dll</file>
+  <file>\Syncfusion.SfRadialMenu.Universal.dll</file>
+  <file>\Syncfusion.SfRichTextBoxAdv.Universal.dll</file>
+  <file>\Syncfusion.SfSchedule.Universal.dll</file>
+  <file>\Syncfusion.SfShared.Universal.dll</file>
+  <file>\Syncfusion.SfTabControl.Universal.dll</file>
+  <file>\Syncfusion.SfTileView.Universal.dll</file>
+  <file>\Syncfusion.SfTreeMap.Universal.dll</file>
+  <file>\Syncfusion.SfTreeNavigator.Universal.dll</file>
+  <file>\Syncfusion.XlsIO.Universal.dll</file>
+</Files>

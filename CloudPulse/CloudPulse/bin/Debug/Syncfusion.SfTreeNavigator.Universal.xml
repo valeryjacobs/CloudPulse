@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfTreeNavigator.Universal</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.NavigationMode">
+            <summary>
+            Defines a enum list for the mode of navigation of the child items
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.NavigationMode.Default">
+            <summary>
+            On clicking parent item the child items are displayed.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.NavigationMode.Extended">
+            <summary>
+            On clicking parent item the child items are displayed with the parent item as header.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator">
+            <summary>
+            Represents a control that enables the user to navigate through items 
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/>
+            in a tree structure
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator"/>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator"/> class.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of the <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator.SelectedItemProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedItem.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator.DrillDownItemProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrillDownItem.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator.DrillDownItemsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrillDownItems.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator.NavigationModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for NavigationMode.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator.OnSelectionChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Occurs when the selected item has changed.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator.GoBack">
+            <summary>
+            When invoked, the control passes back to the parent item.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator.OnItemsChanged(System.Object)">
+            <summary>
+            Occurs when the items <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/> has changed.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator.Select(System.Object)">
+            <summary>
+            Sets the item as te selected item.
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator.SelectionChanged">
+            <summary>
+            Occurs when the <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/> has changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator.SelectedItem">
+            <summary>
+            Gets or sets the item <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/>
+            that has been selected by the user.
+            <value> The default value is null </value>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator.DrillDownItem">
+            <summary>
+            Gets or sets the child item <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator.DrillDownItems">
+            <summary>
+            Gets or sets a collection of the child items <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator.NavigationMode">
+            <summary>
+            Gets or sets the mode of navigation to other items
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.NavigationMode"/>
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem">
+            <summary>
+            Represents a selectable item inside <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator"/>.
+            </summary>
+            <remarks>
+            <b>SfTreeNavigatorItem </b>is a <see
+            cref="N:Windows.UI.Xaml.Controls.ContentControl.">ContentControl</see>.
+            </remarks>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/> class.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.OnPointerReleased(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the pointer is released
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.IsSelectedProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsSelected.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.AccentBrushProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AccentBrush.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.OnPointerPressed(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the pointer is pressed.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.OnTapped(Windows.UI.Xaml.Input.TappedRoutedEventArgs)">
+            <summary>
+            Occurs when the item <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/> is clicked.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.OnPointerEntered(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the pointer is entered.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.OnPointerCaptureLost(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the focus is lost.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.OnPointerExited(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the focus is lost.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.OnGotFocus(Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Invoked when the focus is obtained. 
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.OnLostFocus(Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Invoked when the focus is lost.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.OnKeyDown(Windows.UI.Xaml.Input.KeyRoutedEventArgs)">
+            <summary>
+            Invoked when a key is pressed.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.OnRightTapped(Windows.UI.Xaml.Input.RightTappedRoutedEventArgs)">
+            <summary>
+            Invoked when an item <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/> is clicked.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.Dispose">
+            <summary>
+            Removes all host instances.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.ItemClicked">
+            <summary>
+            Occurs when the <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/>
+            is clicked
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.HasItems">
+            <summary>
+            Gets or sets a value indicating whether <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/> has items.
+            </summary>
+            <value>
+            <c>true</c> if this instance is selected; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.IsSelected">
+            <summary>
+            Gets or sets a value indicating whether <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/> is selected.
+            </summary>
+            <value>
+            <c>true</c> if this instance is selected; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.AccentBrush">
+            <summary>
+            Returns a value defining the AccentBrush of the item <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/>
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.ItemClickEventHandler">
+            <summary>
+            Returns a delegate when the <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/>
+            is clicked
+            </summary>
+            <param name="Sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.ItemClickEventArgs">
+            <summary>
+            Occurs when current <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.ItemClickEventHandler"/> is invoked.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.ItemClickEventArgs.#ctor(Windows.Foundation.Point,Syncfusion.UI.Xaml.Controls.Navigation.MouseMode)">
+            <summary>
+             Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem.ItemClickEventHandler"/> class.
+            </summary>
+            <param name="_itemPosition"></param>
+            <param name="_mouseMode"></param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.ItemClickEventArgs.ItemPosition">
+            <summary>
+            Gets the position of the item <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.ItemClickEventArgs.MouseMode">
+            <summary>
+            Gets the Mouse mode 
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.MouseMode"/>
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.MouseMode">
+            <summary>
+            Defines an enum list for the mouse modes
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.MouseMode.Left">
+            <summary>
+            Left mode
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.MouseMode.Right">
+            <summary>
+            Right mode
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.TreeNavigatorHeaderItem">
+            <summary>
+            Represents a class for defining the header for the items <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TreeNavigatorHeaderItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.TreeNavigatorHeaderItem"/> class.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TreeNavigatorHeaderItem.OnPointerReleased(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the focus is lost
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.TreeNavigatorHeaderItem.ActualTreeViewItem">
+            <summary>
+            Gets or sets the Tree View Item
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.TreeNavigatorItemsHost">
+            <summary>
+            Represents a class for defining the host of the items <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TreeNavigatorItemsHost.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.TreeNavigatorItemsHost"/> class.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigator"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TreeNavigatorItemsHost.IsItemItsOwnContainerOverride(System.Object)">
+            <summary>
+            Checks if the item is a <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/>
+            </summary>
+            <param name="item"></param>
+            <returns>
+            <c>true</c> if this instance is selected; otherwise, <c>false</c>
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TreeNavigatorItemsHost.GetContainerForItemOverride">
+            <summary>
+            Checks if the item is a <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTreeNavigatorItem"/>
+            </summary>
+            <returns>Dependency Object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TreeNavigatorItemsHost.OnKeyDown(Windows.UI.Xaml.Input.KeyRoutedEventArgs)">
+            <summary>
+            Occurs when the key is pressed.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TreeNavigatorItemsHost.PrepareContainerForItemOverride(Windows.UI.Xaml.DependencyObject,System.Object)">
+            <summary>
+            Arranges the container for overrided items
+            </summary>
+            <param name="element"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TreeNavigatorItemsHost.Dispose">
+            <summary>
+            Removes all instances of the control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.TreeNavigatorItemsHost.IsHeaderHost">
+            <summary>
+            Gets or sets the host for header
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,366 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfCarousel.Universal</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel">
+            <summary>
+            The SfCarousel control allows the user to navigate between their items with rich
+            animated UI
+            </summary>
+            <remarks>
+            SfCarousel is a <see cref="T:Syncfusion.UI.Xaml.Primitives.Selector"/> in navigator
+            layout that renders list of items in rich UI, based the properties set with
+            the control animate items on navigate. The item has rich customization support and
+            animation will reflected based on the user values.
+            </remarks>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem"/>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselPanel"/>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.OffsetProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Offset.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.SelectedItemOffsetProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedItemOffset.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.RotationAngleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for RotationAngle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.ZOffsetProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ZOffset.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.DurationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Duration.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.EasingFunctionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EasingFunction.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.ScaleOffsetProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ScaleOffset.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.SelectedItemTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.MoveNext">
+            <summary>
+            Moves the selection next <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem"/>.
+            </summary>
+            <remarks>
+            The MoveNext method moves the current item position, one position forward.
+            Return value is void.
+            </remarks>
+            <seealso cref="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.MovePrevious"/>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.MovePrevious">
+            <summary>
+            Moves the selection to previous <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem"/>.
+            </summary>
+            <remarks>
+            The MovePrevious method moves the current item position, one position backward.
+            Return value is void.
+            </remarks>
+            <seealso cref="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.MoveNext"/>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.Refresh">
+            <summary>
+            Refresh the layout and rearrange the children with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel"/>.
+            </summary>
+            <remarks>
+            Return value is void.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.IsItemItsOwnContainerOverride(System.Object)">
+            <summary>
+            Checks whether the item is a <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem"/>
+            </summary>
+            <param name="item"></param>
+            <returns>
+            <c>true</c> if this instance is selected; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.GetContainerForItemOverride">
+            <summary>
+            Gets a <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem"/>  for override.
+            </summary>
+            <returns>
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem"/>
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.PrepareContainerForItemOverride(Windows.UI.Xaml.DependencyObject,System.Object)">
+            <summary>
+            Sets the properties for the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem"/> item.
+            </summary>
+            <param name="element"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.OnManipulationStarted(Windows.UI.Xaml.Input.ManipulationStartedRoutedEventArgs)">
+            <summary>
+            Sets the offset values
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.OnPointerWheelChanged(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Sets the selected item as the next or previous carousal item <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem"/> based on the mouse movement
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.OnKeyDown(Windows.UI.Xaml.Input.KeyRoutedEventArgs)">
+            <summary>
+            Sets the selected item as the next or previous carousal item <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem"/> based on the keys pressed.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.OnManipulationInertiaStarting(Windows.UI.Xaml.Input.ManipulationInertiaStartingRoutedEventArgs)">
+            <summary>
+            Sets the translation information associated with the event.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.OnManipulationDelta(Windows.UI.Xaml.Input.ManipulationDeltaRoutedEventArgs)">
+            <summary>
+            Sets the selected index based on the tapoffset
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.OnManipulationCompleted(Windows.UI.Xaml.Input.ManipulationCompletedRoutedEventArgs)">
+            <summary>
+            Sets the selected item as <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem"/>
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.OnSelectionChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Sets the selected item when the selection has been changed by the user
+            </summary>
+            <param name="args"></param>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem"/>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.ArrangeOverride(Windows.Foundation.Size)">
+            <summary>
+            Sets the size for the arranging behaviour
+            </summary>
+            <param name="finalSize"></param>
+            <returns> The size </returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.OnApplyTemplate">
+            <summary>
+            Gets or sets the Framework elements on applying the templates.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.Offset">
+            <summary>
+            Gets or sets the space between items.
+            </summary>
+            <value>
+            The default value is 60.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.ScaleOffset"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.SelectedItemOffset"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.ZOffset"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.SelectedItemOffset">
+            <summary>
+            Gets or sets the distance between the current item and other.
+            </summary>
+            <value>
+            The default value is 120.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.Offset"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.ScaleOffset"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.ZOffset"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.RotationAngle">
+            <summary>
+            Gets or sets the rotation angle for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem"/>.
+            </summary>
+            <remarks>
+            Rotation angel of the items.
+            </remarks>
+            <value>
+            The default value is 45.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.ZOffset">
+            <summary>
+            Gets or sets the zooming offset.
+            </summary>
+            <value>
+            The default value is zero. The Zoffset should be set in between 0 and 1.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.Offset"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.ScaleOffset"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.SelectedItemOffset"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.Duration">
+            <summary>
+            Gets or sets the length of time for which this timeline plays, not counting
+            repetitions.
+            </summary>
+            <remarks>
+            Specify the time taken for move an item.
+            </remarks>
+            <value>
+            The default value is <see cref="T:System.TimeSpan"/>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.EasingFunction">
+            <summary>
+            Gets or sets the easing function applied to this animation with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel"/>.
+            </summary>
+            <remarks>
+            Customize the animation effect.
+            </remarks>
+            <value>
+            The default value is <see
+            cref="N:Windows.UI.Xaml.Media.Animation.EasingFunctionBase"/>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.ScaleOffset">
+            <summary>
+            Gets or sets the scale offset with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel"/>.
+            </summary>
+            <value>
+            The default value is 0.7.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.Offset"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.SelectedItemOffset"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.ZOffset"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel.SelectedItemTemplate">
+            <summary>
+            Gets or sets the template for the selected item
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem">
+            <summary>
+            Implements a selectable item inside a <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel"/>
+            </summary>
+            <remarks>
+            The SfCarouselItem is a <see cref="N:Windows.UI.Xaml.Controls.ContentControl"/>.
+            </remarks>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselPanel"/>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem.IsSelectedProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsSelected.  This enables animation, styling, binding, etc...
+            </summary>        
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem.OnApplyTemplate">
+            <summary>
+            Applies the template for<see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.SfBusyIndicator"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem.OnPointerPressed(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Sets the parentItemsControl when pointer is pressed for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.SfBusyIndicator"/> control.
+            </summary>
+            <value>
+            <c>true</c> if this instance is changed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem.OnPointerMoved(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Sets the focus when pointer is moved for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.SfBusyIndicator"/> control.
+            </summary>
+            <value>
+            <c>true</c> if this instance is changed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem.OnPointerReleased(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Sets the parentItemsControl when pointer is released for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.SfBusyIndicator"/> control.
+            </summary>
+            <value>
+            <c>true</c> if this instance is changed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem.IsSelected">
+            <summary>
+            Gets or sets a value indicating whether <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem"/> is selected.
+            </summary>
+            <value>
+            <c>true</c> if this instance is selected; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem.Selected">
+            <summary>
+            Occurs when the selected item has changed.
+            </summary>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem.IsSelected"/>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselPanel">
+            <summary>
+            Used to group and arrange the collections of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselItem"/>
+            </summary>
+            <remarks>
+            SfCarouselPanel is a <see cref="N:Windows.UI.Xaml.Controls.Canvas"/>.<see
+            href=""/>
+            </remarks>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel"/>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselPanel"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Layout.SfCarouselPanel.MeasureOverride(Windows.Foundation.Size)">
+            <summary>
+            Sets the Size of the<see
+            cref="T:Syncfusion.UI.Xaml.Controls.Layout.SfCarousel"/> control.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfGridConverter.Universal</name>
+    </assembly>
+    <members>
+        <member name="M:Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.ExportToExcel(Syncfusion.UI.Xaml.Grid.SfDataGrid,Syncfusion.Data.ICollectionViewAdv,Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions)">
+            <summary>
+            This method exports the dataGrid to excel by considering Grouping,Sorting,Filtering,Summaries,Paging,NestedGrid,CellTypes.
+            </summary>
+            <param name="grid"> SfDataGrid </param>
+            <param name="gridCollectionView"> ICollectionViewAdv</param>
+            <param name="excelExportingOptions"> Class <see cref="T:Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions"> which is used to set the Exporting Options </see></param>
+            <returns>ExcelEngine</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.ExportGroupToExcel(Syncfusion.Data.ICollectionViewAdv,Syncfusion.UI.Xaml.Grid.SfDataGrid,Syncfusion.XlsIO.IWorksheet,Syncfusion.Data.Group,Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions)" -->
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.ExportGroupCaptionToExcel(Syncfusion.UI.Xaml.Grid.SfDataGrid,Syncfusion.Data.ICollectionViewAdv,Syncfusion.Data.Group,Syncfusion.XlsIO.IWorksheet,Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions)" -->
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.ExportGroupSummariesToExcel(Syncfusion.UI.Xaml.Grid.SfDataGrid,Syncfusion.XlsIO.IWorksheet,Syncfusion.Data.ICollectionViewAdv,Syncfusion.Data.Group,Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions)" -->
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.ExportUnBoundRowsToExcel(Syncfusion.UI.Xaml.Grid.SfDataGrid,Syncfusion.XlsIO.IWorksheet,Windows.UI.Xaml.Data.ICollectionView,Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions,Syncfusion.UI.Xaml.Grid.UnBoundRowsPosition,System.Boolean,System.Int32,System.Collections.ObjectModel.ObservableCollection{Syncfusion.UI.Xaml.Grid.GridUnBoundRow})" -->
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.ExportTableSummariesToExcel(Syncfusion.UI.Xaml.Grid.SfDataGrid,Syncfusion.XlsIO.IWorksheet,Syncfusion.Data.ICollectionViewAdv,Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions,Syncfusion.UI.Xaml.Grid.TableSummaryRowPosition)" -->
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.ExportHeadersToExcel(Syncfusion.UI.Xaml.Grid.SfDataGrid,Syncfusion.XlsIO.IWorksheet,System.Int32,Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions)" -->
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.ExportStackedHeadersToExcel(Syncfusion.UI.Xaml.Grid.SfDataGrid,Syncfusion.XlsIO.IWorksheet,System.Int32,Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions)" -->
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.ExportChildGridToExcel(Syncfusion.UI.Xaml.Grid.SfDataGrid,Syncfusion.XlsIO.IWorksheet,Syncfusion.Data.ICollectionViewAdv,Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions)" -->
+        <member name="M:Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.SetIndentColumnWidth(Syncfusion.XlsIO.IWorksheet,System.Int32,System.Int32)">
+            <summary>
+            Sets the ColumnWidth for the specified cells as 20.
+            </summary>
+            <param name="sheet">IWorkSheet</param>
+            <param name="start">Start: Specifies the start indent column index</param>
+            <param name="end">end : Specifies the End column index of indent cells</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.SetColumnWidth(Syncfusion.UI.Xaml.Grid.SfDataGrid,Syncfusion.XlsIO.IWorksheet,System.Int32,System.Collections.Generic.List{System.String})">
+            <summary>
+            Sets the column width from Grid To Excel for all columns starting from specified column index.        
+            </summary>
+            <param name="grid">SfDataGrid</param>
+            <param name="sheet">IWorksheet</param>
+            <param name="columnIndex">ColumnIndex: Specifies the First Column index</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.ExportCellStyle(Syncfusion.XlsIO.IRange,Syncfusion.UI.Xaml.Grid.Converter.ExportCellStyle)" -->
+        <member name="M:Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.ExportCellValueToExcel(Syncfusion.XlsIO.IRange,Syncfusion.Data.IPropertyAccessProvider,System.Object,System.Object,Syncfusion.UI.Xaml.Grid.GridColumn)">
+            <summary>
+            Exports the cell value from datagrid to excel.
+            </summary>
+            <param name="excelRange">IRange - to which the cellvalue is to be exported.</param>
+            <param name="propertyAccessProvider">PropertyAccessProvider is to get the value</param>
+            <param name="record">the record entry</param>
+            <param name="cellValue">Object which holds the value that is exported to excel</param>
+            <param name="gridColumn">the GridColumn</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions">
+            <summary>
+            Class which is used to set the ExportingOptions. 
+            user can pass this class as an argument to the ExportToExcelMethod.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.AllowOutlining">
+            <summary>
+            Specifies whether the groups should export with expand/collapse options or not.
+            There is no indent space maintained if AllowOutlining is set to true.
+            If the grid contains the Details View definition, the AllowOutlining is set to true internally.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.CellsExportingEventHandler">
+            <summary>
+            Delegate handler which is used to handle or customize the exporting of a particular cell in Excel.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.ChildExportingEventHandler">
+            <summary>
+            Delegate handler which is used to customize the exporting of Details View.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.ExcelVersion">
+            <summary>
+            Exports data to Excel in the specificed workbook version
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.ExportAllPages">
+            <summary>
+            Specifies whether the method should export all pages for PagedCollection. By default, it exports the first page only.
+            This option is not supported with OnDemandPaging.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.ExportingEventHandler">
+            <summary>
+            Delegate handler which is used to customize the styles for Header, Table Summary, Group Summary and Caption Summary rows.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.StartColumnIndex">
+            <summary>
+            Exports data to the specified column index in Excel.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.StartRowIndex">
+            <summary>
+            Exports data to to the specified row index in Excel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.ExportPageOptions">
+            <summary>
+            Specifies how the paged collection to be exported into excel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.ExportMode">
+            <summary>
+            Specifies how the data to be exported into excel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.ExportStackedHeaders">
+            <summary>
+            Gets or sets whether stacked headers can be exported or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.ExportUnBoundRows">
+            <summary>
+            Gets or sets whether the UnBoundRows can be exported or not
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Grid.Converter.ExportMode.Text">
+            <summary>
+            Exports the FormattedText to Excel
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Grid.Converter.ExportMode.Value">
+            <summary>
+            Exports the Format into Excel by setting Excel number format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Grid.Converter.ExportPageOptions.ExportToSingleSheet">
+            <summary>
+            Export paged collection to Single sheet
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Grid.Converter.ExportPageOptions.ExportToDifferentSheets">
+            <summary>
+            Export paged collection to different sheets based on page by page (For this case, Grouping can be considered).
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Grid.Converter.GridExportingHelper.CreateCollectionView(Syncfusion.UI.Xaml.Grid.SfDataGrid,System.Object,System.String,Syncfusion.Data.IPropertyAccessProvider)">
+            <summary>
+            Creates the new CollectionViewAdv and adds the Summaries, Groups, SortDescriptions.
+            </summary>
+            <param name="dataGrid">SfdataGrid</param>
+            <param name="record">RecordEntry:Parent Record</param>
+            <param name="relationalColumn">RelationalColumn</param>
+            <param name="propertyAccessProvider">IPropertyAccesProvider</param>
+            <returns>ICollectionViewAdv</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension.ExportToPdf(Syncfusion.UI.Xaml.Grid.SfDataGrid)">
+            <summary>
+            This method exports the dataGrid to PDF.
+            </summary>
+            <param name="sfgrid"> SfDataGrid </param>
+            <returns>PdfDocument</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension.ExportToPdf(Syncfusion.UI.Xaml.Grid.SfDataGrid,Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions)">
+            <summary>
+            This method exports the dataGrid to PDF.
+            </summary>
+            <param name="sfgrid"> SfDataGrid </param>
+            <param name="pdfExportingOptions"> Class <see cref="T:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions"> which is used to set the exporting options </see></param>
+            <returns>PdfDocument</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension.ExportToPdf(Syncfusion.UI.Xaml.Grid.SfDataGrid,Syncfusion.Data.ICollectionViewAdv,Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions)">
+            <summary>
+            This method exports the dataGrid to PDF.
+            </summary>
+            <param name="sfgrid"> SfDataGrid </param>
+            <param name="gridCollectionView"> ICollectionViewAdv</param>
+            <param name="pdfExportingOptions"> Class <see cref="T:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions"> which is used to set the exporting options </see></param>
+            <returns>PdfDocument</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension.ExportToPdfGrid(Syncfusion.UI.Xaml.Grid.SfDataGrid,Syncfusion.Data.ICollectionViewAdv,Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions)">
+            <summary>
+            This method exports the dataGrid to PDF.
+            </summary>
+            <param name="sfgrid"> SfDataGrid </param>
+            <param name="gridCollectionView"> ICollectionViewAdv</param>
+            <param name="pdfExportingOptions"> Class <see cref="T:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions"> which is used to set the exporting options </see></param>
+            <returns>PdfGrid</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension.ExportUnBoundRowsToPdf(Syncfusion.UI.Xaml.Grid.SfDataGrid,Syncfusion.Pdf.Grid.PdfGrid,Syncfusion.Data.IPropertyAccessProvider,System.Collections.Generic.IEnumerable{Syncfusion.UI.Xaml.Grid.GridColumn},Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions,Syncfusion.UI.Xaml.Grid.UnBoundRowsPosition,System.Boolean,System.Int32,System.Collections.ObjectModel.ObservableCollection{Syncfusion.UI.Xaml.Grid.GridUnBoundRow})" -->
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.RepeatHeaders">
+            <summary>
+            Gets or sets whether the headers can be repeated in each page or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.ExcludeColumns">
+            <summary>
+            Gets or sets the columns that needs to be excluded while exporting
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.AutoColumnWidth">
+            <summary>
+            Gets or sets whether the column widths are automatically assigned or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.AutoRowHeight">
+            <summary>
+            Gets or sets whether the row heights can be exported or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.ExportFormat">
+            <summary>
+            Gets or sets whether the values can be exported with format or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.ExportDetailsView">
+            <summary>
+            Gets or sets whether the details view can be exported or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.ExportUnBoundRows">
+            <summary>
+            Gets or sets whether the UnBoundRows can be exported or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.ExportAllDetails">
+            <summary>
+            Gets or sets whether export all details view even the details view is not expanded.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.ExportGroups">
+            <summary>
+            Gets or sets whether groups can be exported or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.ExportGroupSummary">
+            <summary>
+            Gets or sets whether group summary can be exported or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.ExportTableSummary">
+            <summary>
+            Gets or sets whether table summary can be exported or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.ExportAllPages">
+            <summary>
+            Gets or sets whether all pages to be exported or not on PagedCollection
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.FitAllColumnsInOnePage">
+            <summary>
+            Gets or sets whether the all columns should be fit on a page or not
+            <value>true</value>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.ExportStackedHeaders">
+            <summary>
+            Gets or sets whether stacked headers can be exported or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.ChildLevel">
+            <summary>
+            Gets or sets the level of Childgrid
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.GridViewDefinition">
+            <summary>
+            Gets or sets the ViewDefinition of ChildGrid
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.ExportingEventHandler">
+            <summary>
+            Delegate handler which triggers while exporting grid and is used to customize the Headers, 
+            Table Summaries, Group Summaries and Group captions
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.CellsExportingEventHandler">
+            <summary>
+            Delegate handler which triggers for each cell and is used to handle or customize the cell.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.ChildGridExportingEventHandler">
+            <summary>
+            Delegate handler which triggers while exporting Details view and is used to handle the exporting details view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.PageHeaderFooterEventHandler">
+            <summary>
+            Delegate handler which triggers for allowing the user to add header and footer of the page.
+            </summary>
+        </member>
+    </members>
+</doc>

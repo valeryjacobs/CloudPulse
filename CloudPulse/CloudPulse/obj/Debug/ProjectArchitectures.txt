@@ -1,0 +1,1 @@
+C:\Code\CloudPulse\CloudPulse\CloudPulse\CloudPulse.csproj;neutral

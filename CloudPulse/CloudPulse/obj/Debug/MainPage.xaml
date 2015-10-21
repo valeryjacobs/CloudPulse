@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="CloudPulse.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:local="using:CloudPulse"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.DataContext>
+            <local:MainPage/>
+        </Grid.DataContext>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:ConnectionId='1' x:Name="start"                      BorderThickness="0">
+                    <StackPanel>
+                        <Image  Height="50" Source="Assets/Start.png"></Image>
+                        <TextBlock  HorizontalAlignment="Center">Start</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button x:ConnectionId='2' Visibility="Collapsed" x:Name="stop"                     BorderThickness="0">
+                    <StackPanel>
+                        <Image  Height="50" Source="Assets/Start.png"></Image>
+                        <TextBlock  HorizontalAlignment="Center">Stop</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Image x:Name="signalImage" Margin="40,0,0,0" Height="50" Source="Assets/Signal-Bad.png"></Image>
+                <Image x:Name="cloudImage" Margin="40,0,0,0" Height="50" Source="Assets/Cloud-Offline.png"></Image>
+            </StackPanel>
+            <!--<chart:SfChart3D Height="200" Width="200"/>-->
+        </StackPanel>
+        <ScrollViewer MinHeight="400"  VerticalScrollBarVisibility="Auto">
+                <TextBlock TextWrapping="Wrap" Text="{Binding StatusMessage}" FontSize="16"/>
+            </ScrollViewer>
+            
+           
+
+    </Grid>
+</Page>
+

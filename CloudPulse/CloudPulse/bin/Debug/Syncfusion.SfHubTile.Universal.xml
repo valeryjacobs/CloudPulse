@@ -1,0 +1,822 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfHubTile.Universal</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Notification.PointerDirection">
+            <summary>
+             Specify the pointer direction with the control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.PointerDirection.Left">
+            <summary>
+             Pointer aligned to the left.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.PointerDirection.Top">
+            <summary>
+             Pointer aligned to the top.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.PointerDirection.Right">
+            <summary>
+             Pointer aligned to the right.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.PointerDirection.Bottom">
+            <summary>
+             Pointer aligned to the Bottom.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.PointerDirection.Center">
+            <summary>
+             Pointer aligned to the Center.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.PointerDirection.TopLeft">
+            <summary>
+             Pointer aligned to the TopLeft.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.PointerDirection.TopRight">
+            <summary>
+             Pointer aligned to the TopRight.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.PointerDirection.BottomLeft">
+            <summary>
+             Pointer aligned to the BottomLeft.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.PointerDirection.BottomRight">
+            <summary>
+             Pointer aligned to the BottomRight.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Notification.HeaderHeightConverter">
+            <summary>
+            HeaderHeightConverter is a class which helps to convert HeaderHeight
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.HeaderHeightConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts a value of HeaderHeight
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.HeaderHeightConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Inverse of Convert Method
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase">
+            <summary>
+            Serves as a base for the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.HubTile"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.GroupNameProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for GroupName.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.IsFrozenProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsFrozen.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.TitleStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TitleStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.OverrideDefaultStatesProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for OverrideDefaultStates.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.AccentBrushProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AccentBrush.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.TitleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Title.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.ImageSourceProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ImageSource.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.RotationDepthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for RotationDepth.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.ScaleDepthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ScaleDepth.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.TilePressDurationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Duration.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.CommandProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Command.  This enables animation, styling, binding, etc...
+            </summary>
+            <value>The default value is null</value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.CommandParameterProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CommandParameter.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.ExecutePointerReleased">
+            <summary>
+            Method which handles Mouse Pointer
+            </summary>
+            <summary>
+            Method for ExecutePointerReleased
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.OnTapped(Windows.UI.Xaml.Input.TappedRoutedEventArgs)">
+            <summary>
+            Invoked when the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.HubTile"/> is pressed.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.OnPointerCaptureLost(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the focus is lost
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.OnPointerReleased(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the Pointer is released
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.OnPointerPressed(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the Pointer is pressed
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.OnPointerEntered(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the Pointer entered
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.OnPointerExited(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the Pointer exited
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.OnIsFrozenChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when the IsFrozen property is changed
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.Storyboard">
+            <summary>
+            Gets or internal set the Storyboard.
+            </summary>
+            <value>The storyboard.</value>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.Click">
+            <summary>
+            Invokes the method for routed events
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.GroupName">
+            <summary>
+            Gets or sets the name of the group.
+            </summary>
+            <value>The name of the group.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.IsFrozen">
+            <summary>
+            Gets or sets a value indicating whether this instance is frozen.
+            </summary>
+            <value><c>true</c> if this instance is frozen; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.TitleStyle">
+            <summary>
+            Gets or sets the title style.
+            </summary>
+            <value>The title style.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.OverrideDefaultStates">
+            <summary>
+            Gets or sets a value indicating whether to override default states of the tile.
+            </summary>
+            <value><c>true</c> if override default states; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.AccentBrush">
+            <summary>
+            Gets or sets the accent brush.
+            </summary>
+            <value>The accent brush.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.Title">
+            <summary>
+            Gets or sets the title to show in the tile.
+            </summary>
+            <value>The title.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.ImageSource">
+            <summary>
+            Gets or sets the image to display in the tile.
+            </summary>
+            <value>The image source.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.RotationDepth">
+            <summary>
+            Gets or sets the rotation depth.
+            </summary>
+            <value>The rotation depth.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.ScaleDepth">
+            <summary>
+            Gets or sets the scale depth.
+            </summary>
+            <value>The scale depth.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.TilePressDuration">
+            <summary>
+            Gets or sets the duration of the tile press.
+            </summary>
+            <value>The duration of the tile press.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.Command">
+            <summary>
+            Gets or Sets the command to be executed when the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.HubTile"/> is pressed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.HubTileBase.CommandParameter">
+            <summary>
+            Gets or sets the value for the parameter of the command.
+            </summary>
+            <value>The default value is null</value>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Notification.HubTileService">
+            <summary>
+            HiubTileService that provides the helper methods to <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.HubTile"/>.
+            </summary>
+            <remarks>
+            Hub Tile Service is a class which provides the helper methods to freeze and
+            unfreeze the animation by passing HubTile instance or GroupName as argument.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.Freeze(Syncfusion.UI.Xaml.Controls.Notification.HubTileBase)">
+            <summary>
+            Freeze the particular <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.HubTile"/>.
+            </summary>
+            <remarks>
+            The Return value is void.
+            </remarks>
+            <param name="tile">one of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.HubTile"/>.</param>
+            <seealso
+            cref="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.UnFreeze(System.String)">UnFreeze(String)</seealso>
+            <seealso
+            cref="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.Freeze(System.String)">Freeze(String)</seealso>
+            <seealso
+            cref="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.UnFreeze(Syncfusion.UI.Xaml.Controls.Notification.HubTile)">UnFreezee(HubTile)</seealso>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.Freeze(System.String)">
+            <summary>
+             Freeze the particular group of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.HubTile">HubTile&apos;s</see>
+            </summary>
+            <param name="groupname">name of the group.</param>
+            <seealso
+            cref="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.UnFreeze(System.String)">UnFreeze(String)</seealso>
+            <seealso
+            cref="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.Freeze(Syncfusion.UI.Xaml.Controls.Notification.HubTile)">Freeze(HubTile)</seealso>
+            <seealso
+            cref="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.UnFreeze(Syncfusion.UI.Xaml.Controls.Notification.HubTile)">UnFreezee(HubTile)</seealso>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.UnFreeze(Syncfusion.UI.Xaml.Controls.Notification.SfHubTile)">
+            <summary>
+            Unfreeze the particular <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.HubTile"/>.
+            </summary>
+            <remarks>
+            The Return value is void.
+            </remarks>
+            <param name="tile">one of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.HubTile"/>.</param>
+            <seealso
+            cref="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.Freeze(System.String)">Freeze(String)</seealso>
+            <seealso
+            cref="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.UnFreeze(System.String)">UnFreeze(String)</seealso>
+            <seealso
+            cref="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.Freeze(Syncfusion.UI.Xaml.Controls.Notification.HubTile)">Freeze(HubTile)</seealso>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.UnFreeze(System.String)">
+            <summary>
+             UnFreeze the particular group of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.HubTile">HubTile&apos;s</see>
+            </summary>
+            <param name="groupname">name of the group.</param>
+            <seealso
+            cref="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.Freeze(System.String)">Freeze(String)</seealso>
+            <seealso
+            cref="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.Freeze(Syncfusion.UI.Xaml.Controls.Notification.HubTile)">Freeze(HubTile)</seealso>
+            <seealso
+            cref="M:Syncfusion.UI.Xaml.Controls.Notification.HubTileService.UnFreeze(Syncfusion.UI.Xaml.Controls.Notification.HubTile)">UnFreezee(HubTile)</seealso>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile">
+            <summary>
+            HubTile control provides
+            notification through various transition effects.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.HubTile"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile.SecondaryContentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HubTileContent.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile.SecondaryContentTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SecondaryContentTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile.HubTileTransitionsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HubTileTransition.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile.IntervalProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Duration.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile.OnIsFrozenChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when the IsFrozen property is changed
+            </summary>
+            <param name="e"></param>
+            <value> Timer is
+            <c>Stop</c> if IsFrozen is True; otherwise, <c>Start</c>.
+            </value>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of the <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile"/>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile.ClearRotationAnimation">
+            <summary>
+            Method to Clear the RotationAnimation
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile.HubTileTransitionCompleted">
+            <summary>
+            Invokes the event when the HubTileTransition is completed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile.SecondaryContent">
+            <summary>
+            Gets or sets the secondary content to displayed with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.HubTile"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile.SecondaryContentTemplate">
+            <summary>
+            Gets or sets the template for the secondary content to displayed with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.HubTile"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile.HubTileTransitions">
+            <summary>
+            Gets or sets <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.HubTileTransitionCollection"/> that specifies transitions
+            with <see cref="T:Syncfusion.UI.Xaml.Controls.Notification.HubTile"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile.Interval">
+            <summary>
+            Gets or sets the number of milliseconds to wait before initiating a postback.
+            </summary>
+            <value>
+            It accepts the type of <see cref="T:System.TimeSpan"/>, The default values is
+            0 <see cref="P:System.TimeSpan.Milliseconds"/>.
+            </value>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Notification.SfHubTile.AnimationCompletedEventHandler">
+            <summary>
+            Acts as an event handler when the animation is completed.
+            </summary>
+            <param name="Sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Notification.AnimationCompletedArgs">
+            <summary>
+            Arguments for the AnimationCompletedEventHandler
+            </summary>
+            <remarks>
+            Consists of a variable for ContentTransition
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.AnimationCompletedArgs.#ctor(Syncfusion.UI.Xaml.Controls.ContentTransition)">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.AnimationCompletedArgs"/> class.
+            </summary>
+            <param name="_hubTileTransition"></param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.AnimationCompletedArgs.HubTileTransition">
+            <summary>
+            Gets the value for ContentTransition
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Notification.SfMosaicTile">
+            <summary>
+            MosaicTile control resembles
+            the people tile in Windows phone home screen. It displays a collection of images
+            in tile structure. Each tile will show a flip transition and show image
+            randomly.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.SfMosaicTile.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.MosaicTile"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfMosaicTile.ImageListProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ImageList.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfMosaicTile.AccentBrushProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AccentBrush.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfMosaicTile.IntervalProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Duration.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.SfMosaicTile.CheckForExistence(System.String)">
+            <summary>
+            Checks if there exists children for the <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent"/>
+            </summary>
+            <param name="image"></param>
+            <returns>
+            <c>true</c> if element exists; otherwise, <c>false</c>
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.SfMosaicTile.OnIsFrozenChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when the IsFrozen property is changed
+            </summary>
+            <param name="e"></param>
+            <value> Timer is
+            <c>Stop</c> if IsFrozen is True; otherwise, <c>Start</c>.
+            </value>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.SfMosaicTile.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of the <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.MosaicTile"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.SfMosaicTile.ImageList">
+            <summary>
+            Gets or sets the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.ImageList"/> that holds the
+            collection of images to display with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.MosaicTile"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.SfMosaicTile.AccentBrush">
+            <summary>
+            Gets or sets the brush to show when the same image is repeating
+            </summary>
+            <value>
+            <para>The default value is <see
+            cref="T:Windows.UI.Colors.Transparent">Colors.Transparent</see></para>
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.SfMosaicTile.Interval">
+            <summary>
+            Gets or sets the number of milliseconds to wait before initiating a post back.
+            </summary>
+            <value>
+            It accepts the type of <see cref="T:System.TimeSpan"/>, The default values is
+            0 <see cref="P:System.TimeSpan.Milliseconds"/>.
+            </value>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Notification.SfPulsingTile">
+            <summary>
+            PulsingTile Control resembles
+            the Music and Video hub tile in Windows phone. The content will zooms
+            out/in randomly and show a translation movement in X and Y axis randomly.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.SfPulsingTile.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.PulsingTile"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfPulsingTile.PART_Content">
+            <summary>
+            Defines a variable for the ContentPresenter framework element
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfPulsingTile.RadiusXProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for RadiusX.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfPulsingTile.RadiusYProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for RadiusY.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfPulsingTile.PulseDurationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PulseDuration.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfPulsingTile.TranslateDurationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TranslateDuration.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfPulsingTile.PulseScaleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PulseScale.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.SfPulsingTile.OnIsFrozenChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when the IsFrozen property is changed
+            </summary>
+            <param name="e"></param>
+            <value> pulseStroyboard is
+            <c>Stop</c> if IsFrozen is True; otherwise, <c>Begin</c>.
+            </value>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.SfPulsingTile.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.PulsingTile"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.SfPulsingTile.RadiusX">
+            <summary>
+            Gets or sets the value that specify the radius X with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.PulsingTile"/>.
+            </summary>
+            <value>
+            The default values is zero.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Notification.PulsingTile.RadiusY"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.SfPulsingTile.RadiusY">
+            <summary>
+            Gets or sets the value that specify the radius Y with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.PulsingTile"/>.
+            </summary>
+            <value>
+            The default values is zero.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Notification.PulsingTile.RadiusX"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.SfPulsingTile.PulseDuration">
+            <summary>
+            Gets or sets the <see cref="T:System.TimeSpan"/> that specify the pulse duration
+            for animation.
+            </summary>
+            <value>
+            The default value is 4 <see cref="P:System.TimeSpan.Milliseconds"/>.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Notification.PulsingTile.TranslateDuration"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.SfPulsingTile.TranslateDuration">
+            <summary>
+            Gets or sets the <see cref="T:System.TimeSpan"/> that specify the translate
+            duration for animation.
+            </summary>
+            <value>
+            The default value is 4 <see cref="P:System.TimeSpan.Milliseconds"/>.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Notification.PulsingTile.PulseDuration"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.SfPulsingTile.PulseScale">
+            <summary>
+            Gets or sets the scale value for animation
+            </summary>
+            <value>
+            The default value is 1.
+            </value>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Notification.SfSplitMosaicTile">
+            <summary>
+            SplitMosaicTile Control resembles
+            the Contacts group tile in Windows Phone home screen. It will display a
+            collection of images in 3 horizontally stretched tiles. Each tile will flip
+            themselves randomly to bring a new image.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.SfSplitMosaicTile.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.SplitMosaicTile"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfSplitMosaicTile.ImageListProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ImageList.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfSplitMosaicTile.AccentBrushProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AccentBrush.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.SfSplitMosaicTile.IntervalProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Duration.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.SfSplitMosaicTile.OnIsFrozenChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when the IsFrozen property is changed
+            </summary>
+            <param name="e"></param>
+            <value> Timer is
+            <c>Stop</c> if IsFrozen is True; otherwise, <c>Start</c>.
+            </value>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Notification.SfSplitMosaicTile.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of the <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.SplitMosaicTile"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.SfSplitMosaicTile.ImageList">
+            <summary>
+            Gets or sets the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.ImageList"/> that holds the
+            collection of images to display with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Notification.SplitMosaicTile"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.SfSplitMosaicTile.AccentBrush">
+            <summary>
+            Gets or sets the brush to show when the same image is repeating
+            </summary>
+            <value>
+            <para>The default value is <see
+            cref="T:Windows.UI.Colors.Transparent">Colors.Transparent</see></para>
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.SfSplitMosaicTile.Interval">
+            <summary>
+            Gets or sets the number of milliseconds to wait before initiating a post back.
+            </summary>
+            <value>
+            It accepts the type of <see cref="T:System.TimeSpan"/>, The default values is
+            0 <see cref="P:System.TimeSpan.Milliseconds"/>.
+            </value>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Notification.HubTileTransitionCollection">
+            <summary>
+            HubTileTransitionCollection is a collection of <see
+            cref="N:Windows.UI.Xaml.Controls.ContentTransition"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Notification.ImageList">
+            <summary>
+             Image list is a collection of image locations.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent">
+            <summary>
+            Represents a MosaicTileContent Control
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent.ImageProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Image.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent.ImageWidthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ImageWidth.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent.ImageHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ImageHeight.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent.HorizontalImageAlignmentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HorizontalImageAlignment.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent.VerticalImageAlignmentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for VerticalImageAlignment.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent.BackgroundProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Background.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent.OpacityProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Opacity.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent.Image">
+            <summary>
+            Gets or sets the image.
+            </summary>
+            <value>The image.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent.ImageWidth">
+            <summary>
+            Gets or sets the width of the image.
+            </summary>
+            <value>The width of the image.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent.ImageHeight">
+            <summary>
+            Gets or sets the height of the image.
+            </summary>
+            <value>The height of the image.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent.HorizontalImageAlignment">
+            <summary>
+            Gets or sets the horizontal alignment of the image.
+            </summary>
+            <value>The horizontal image alignment.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent.VerticalImageAlignment">
+            <summary>
+            Gets or sets the vertical alignment of the image.
+            </summary>
+            <value>The vertical image alignment.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent.Background">
+            <summary>
+            Gets or sets the background.
+            </summary>
+            <value>The background.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Notification.MosaicTileContent.Opacity">
+            <summary>
+            Gets or sets the opacity.
+            </summary>
+            <value>The opacity.</value>
+        </member>
+    </members>
+</doc>
